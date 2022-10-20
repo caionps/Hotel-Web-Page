@@ -1,9 +1,0 @@
--Heading (Recepção)
-Precisando de ajuda ou efetuar o pagamento?
-Visite nossa Recepção
-
--Heading (Serviço de Quarto) 
-Informe sobre os horarios de limpeza dos quartos.
-
--Heading (Lavanderia)
-Informe sobre os horarios em que a lavanderia está aberta a serviços.
