@@ -39,116 +39,116 @@
 
   <main>
 
+    <form id="cadastro-form" action="http://127.0.0.1:5000/reserva" method="post">
+      <div class="container marketing">
+        <hr class="featurette-divider">
+        <h2>Realize sua reserva aqui</h2>
 
-    <div class="container marketing">
-      <hr class="featurette-divider">
-      <h2>Realize sua reserva aqui</h2>
+        <div class="card ">
+          
+          <div class="card-body">
+              <div class="mb-3">
+                  <div class="row">
+                      <div class="col-sm">
+                          <label for="exampleFormControlInput1" class="form-label">Nome completo</label>
+                      <input type="text" class="form-control" id="nome" name="nome">
+                      </div>
+                      <div class="col-sm">
+                          <label for="exampleFormControlInput1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="nome@exemplo.com">
+                      </div>
 
-      <div class="card ">
-        
-        <div class="card-body">
-            <div class="mb-3">
-                <div class="row">
-                    <div class="col-sm">
-                        <label for="exampleFormControlInput1" class="form-label">Nome completo</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="col-sm">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-                    </div>
+                  </div>
 
-                </div>
-
-            </div>
-            <div class="mb-3">
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Escolha o quarto</button>
-                            <ul class="dropdown-menu">
-                                <li class="list-group-item">
-                                    <input class="form-check-input" type="radio" name="optradio">  Economico</li>
-                                    <label class="form-check-label" for="flexRadioDefault1"></label>
-                                <li class="list-group-item">
-                                    <input class="form-check-input" type="radio" name="optradio">  Conforto</li>
-                                    <label class="form-check-label" for="flexRadioDefault2"></label>
-                                <li class="list-group-item">
-                                        <input class="form-check-input" type="radio" name="optradio">  Luxo</li>
-                                        <label class="form-check-label" for="flexRadioDefault3"></label>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Número de Pessoas</button>
-                            <ul class="dropdown-menu">
-                                <li class="list-group-item">
-                                    <input class="form-check-input" type="radio" name="optradio">  1</li>
-                                    <label class="form-check-label" for="flexRadioDefault1"></label>
-                                <li class="list-group-item">
-                                    <input class="form-check-input" type="radio" name="optradio">  2</li>
-                                    <label class="form-check-label" for="flexRadioDefault2"></label>
-                                <li class="list-group-item">
-                                        <input class="form-check-input" type="radio" name="optradio">  3</li>
-                                        <label class="form-check-label" for="flexRadioDefault3"></label>
-                                <li class="list-group-item">
-                                    <input class="form-check-input" type="radio" name="optradio">  4</li>
-                                    <label class="form-check-label" for="flexRadioDefault4"></label>
-                                <li class="list-group-item">
-                                    <input class="form-check-input" type="radio" name="optradio">  5</li>
-                                    <label class="form-check-label" for="flexRadioDefault5"></label>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm">                            
-                        <label for="startDate">Entrada</label> 
-                        <input id="startDate" class="form-control" type="date" />
-                        <span id="startDateSelected"></span> 
-                                    
-                    </div>
-                            
-                    <div class="col-sm">
-                        <label for="endDate">Saída</label>
-                        <input id="endDate" class="form-control" type="date" />
-                        <span id="endDateSelected"></span>
-                        
-                    </div>
-                </div>
+              </div>
+              <div class="mb-3">
+                  <div class="row">
+                      <div class="col-sm">
+                          <div class="dropdown">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Escolha o quarto</button>
+                              <ul class="dropdown-menu">
+                                  <li class="list-group-item">
+                                      <input class="form-check-input" type="radio" name="optradio" value="Economico">  Economico</li>
+                                      <label class="form-check-label" for="flexRadioDefault1"></label>
+                                  <li class="list-group-item">
+                                      <input class="form-check-input" type="radio" name="optradio" value="Conforto">  Conforto</li>
+                                      <label class="form-check-label" for="flexRadioDefault2"></label>
+                                  <li class="list-group-item">
+                                          <input class="form-check-input" type="radio" name="optradio" value="Luxo">  Luxo</li>
+                                          <label class="form-check-label" for="flexRadioDefault3"></label>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-sm">
+                          <div class="dropdown">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Número de Pessoas</button>
+                              <ul class="dropdown-menu">
+                                  <li class="list-group-item">
+                                      <input class="form-check-input" type="radio" name="optradio">  1</li>
+                                      <label class="form-check-label" for="flexRadioDefault1"></label>
+                                  <li class="list-group-item">
+                                      <input class="form-check-input" type="radio" name="optradio">  2</li>
+                                      <label class="form-check-label" for="flexRadioDefault2"></label>
+                                  <li class="list-group-item">
+                                          <input class="form-check-input" type="radio" name="optradio">  3</li>
+                                          <label class="form-check-label" for="flexRadioDefault3"></label>
+                                  <li class="list-group-item">
+                                      <input class="form-check-input" type="radio" name="optradio">  4</li>
+                                      <label class="form-check-label" for="flexRadioDefault4"></label>
+                                  <li class="list-group-item">
+                                      <input class="form-check-input" type="radio" name="optradio">  5</li>
+                                      <label class="form-check-label" for="flexRadioDefault5"></label>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-sm">                            
+                          <label for="startDate">Entrada</label> 
+                          <input id="startDate" class="form-control" type="date" />
+                          <span id="startDateSelected"></span> 
+                                      
+                      </div>
+                              
+                      <div class="col-sm">
+                          <label for="endDate">Saída</label>
+                          <input id="endDate" class="form-control" type="date" />
+                          <span id="endDateSelected"></span>
+                          
+                      </div>
+                  </div>
+                  
+              </div>
+              <button type="button submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Confirmar Reserva
+                </button>
                 
-            </div>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Confirmar Reserva
-              </button>
-              
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Reserva Confirmada!!</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      Estamos ansiosos para recebê-los em nossa recepção!
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Reserva Confirmada!!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Estamos ansiosos para recebê-los em nossa recepção!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-        
-        <!--<a href="#" class="btn btn-primary">Realizar Reserva</a>-->
-        <div class="modal-dialog modal-dialog-centered">
+          
+
+          <div class="modal-dialog modal-dialog-centered">
+          </div>
+          </div>
         </div>
-        </div>
+
+        <hr class="featurette-divider">
+
       </div>
-
-      <hr class="featurette-divider">
-
-    </div>
-
+    </form>
 
     <!-- FOOTER -->
     <footer class="container">
